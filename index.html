@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Code</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon-rayne.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <form action="" id="code-form">
+            <div class="row">
+                <h1 class="mb-1">Chris' Layout Autofiller</h1>
+                <div class="form-text mt-0 mb-3">Version 1.3 (Rayne's Theme)</div>
+                <p>The perfect application to get the majority of your code filled in quick! It makes it easier than ever to test out different color schemes, fonts, borders, just about anything you could think of, all without any of the headaches! The only things that this form
+                    leaves entirely manual are the progress bars and individual images for cave, mounds, what have you.
+                    Those are a bit too complicated and situational to include so are best left to the end when making the final tweaks.
+                    Hopefully I worked out any of the bugs lmao</p>
+                <p>Required fields are marked in bright violet.</p>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-6 col-12">
+
+                    <h3>Font and Text</h3>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="font-face">Font Import Link:</label>
+                        <input class="form-control" type="text" name="font-face" id="font-face">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="font-main">Main Font:</label>
+                        <input class="form-control" type="text" name="font-main" id="font-main">
+                        <div class="form-text">Please capitalize the font name, but no need to wrap it in any quotes.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="font-main-fall">Main Font Type:</label>
+                        <select name="font-main-fall" id="font-main-fall" class="form-select">
+                            <option value="serif">Cursive/Serif</option>
+                            <option value="sans">Sans-Serif</option>
+                            <option value="mono">Monospace</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="font-head">Header Font:</label>
+                        <input class="form-control" type="text" name="font-head" id="font-head">
+                        <div class="form-text">Same deal as with the main font. Leave blank if only using one font for
+                            the layout.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="font-head-fall">Header Font Type:</label>
+                        <select name="font-head-fall" id="font-head-fall" class="form-select">
+                            <option value="serif">Cursive/Serif</option>
+                            <option value="sans">Sans-Serif</option>
+                            <option value="mono">Monospace</option>
+                        </select>
+                        <div class="form-text">Ignore if previous field left blank.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="font-primary">Primary Font Color:</label>
+                        <div class="form-check form-switch">
+                            <label class="form-label" for="text-check" class="form-check-label" role="switch">Light
+                                Text?</label>
+                            <input type="checkbox" name="text-check" id="text-check" class="form-check-input" role="switch">
+                        </div>
+                        <input class="form-control" type="text" name="font-primary" id="font-primary">
+                        <div class="form-text">No # necessary. Please only enter 6 or 8 digit hexcodes for all color
+                            fields.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="font-secondary">Secondary Font Color:</label>
+                        <input class="form-control" type="text" name="font-secondary" id="font-secondary">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="font-tertiary">Tertiary Font Color:</label>
+                        <input class="form-control" type="text" name="font-tertiary" id="font-tertiary">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="event-text" class="form-label required">Event Flavor Text Color:</label>
+                        <input type="text" class="form-control" name="event-text" id="event-text">
+                        <div class="form-text">This is the text that tells you how many flirts, slaps, and whatever
+                            you've got in February.</div>
+                    </div>
+
+                    <h3>Color Scheme and BG Image(s)</h3>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="bg-color">Background Color:</label>
+                        <input class="form-control" type="text" name="bg-color" id="bg-color">
+                        <div class="form-text">Applies to the background of the body and main elements. The main area
+                            will automatically be at 50% opacity, though, so
+                            no 8 digit hexcodes please.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="primary-one">Primary One (darkest):</label>
+                        <input class="form-control" type="text" name="primary-one" id="primary-one">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="primary-two">Primary Two:</label>
+                        <input class="form-control" type="text" name="primary-two" id="primary-two">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="primary-three">Primary Three:</label>
+                        <input class="form-control" type="text" name="primary-three" id="primary-three">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="primary-four">Primary Four:</label>
+                        <input class="form-control" type="text" name="primary-four" id="primary-four">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="secondary-one">Secondary One (darkest):</label>
+                        <input class="form-control" type="text" name="secondary-one" id="secondary-one">
+                        <div class="form-text">Leave secondaries blank if you want them to be the same as the primaries.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="secondary-two">Secondary Two:</label>
+                        <input class="form-control" type="text" name="secondary-two" id="secondary-two">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="secondary-three">Secondary Three:</label>
+                        <input class="form-control" type="text" name="secondary-three" id="secondary-three">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="secondary-four">Secondary Four:</label>
+                        <input class="form-control" type="text" name="secondary-four" id="secondary-four">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="tertiary">Tertiary:</label>
+                        <input class="form-control" type="text" name="tertiary" id="tertiary">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label required" for="desktop-bg">Desktop BG:</label>
+                        <input class="form-control" type="url" name="desktop-bg" id="desktop-bg">
+                        <div class="form-text">Dropbox links do not need to be edited. It'll be done for you.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="mobile-bg">Mobile BG:</label>
+                        <input class="form-control" type="url" name="mobile-bg" id="mobile-bg">
+                        <div class="form-text">Leave blank if not applicable.</div>
+                    </div>
+
+                    <h3>Borders</h3>
+
+                    <div class="mt-3">
+                        <div class="form-check form-switch">
+                            <label class="form-label" for="border-check" class="form-check-label" role="switch">Rounded
+                                Borders?</label>
+                            <input type="checkbox" name="border-check" id="border-check" class="form-check-input" role="switch">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="border-width">Border Width (px):</label>
+                        <input class="form-control" type="text" name="border-width" id="border-width">
+                        <div class="form-text">Leave blank if not applicable.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="border-style">Border Style:</label>
+                        <input class="form-control" type="text" name="border-style" id="border-style">
+                        <div class="form-text">Leave blank if not applicable.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="border-color">Border Color:</label>
+                        <input class="form-control" type="text" name="border-color" id="border-color">
+                        <div class="form-text">Leave blank if not applicable.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="shadow-color">Box Shadow Color:</label>
+                        <input class="form-control" type="text" name="shadow-color" id="shadow-color">
+                        <div class="form-text">Leave blank if not applicable.</div>
+                    </div>
+
+                    <h3>HTML Boxes</h3>
+
+                    <div class="mt-3">
+                        <div class="form-check form-switch">
+                            <label class="form-label" for="popup-check" class="form-check-label" role="switch">Pop-up
+                                Tab?</label>
+                            <input type="checkbox" name="popup-check" id="popup-check" class="form-check-input" role="switch">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check form-switch">
+                            <label class="form-label mb-0" for="box-check" class="form-check-label" role="switch">Extra
+                                Plain Box?</label>
+                            <input type="checkbox" name="box-check" id="box-check" class="form-check-input" role="switch">
+                            <div class="form-text">Not currently available with Static #2.</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="html-box" class="form-label">Main Boxes Style:</label>
+                        <select name="html-box" id="html-box" class="form-select">
+                            <option value="none">None/Custom</option>
+                            <option value="1">Hover-Expand Boxes</option>
+                            <option value="2">Static #1</option>
+                            <option value="3">Static #2</option>
+                        </select>
+                        <div class="form-text">The Hover-Expand boxes are the ones that I have on my main. Static #1 has
+                            a large box on the left and two small on the right, which I have on my side. Static #2 has a
+                            medium box on the left, a small box on the right, and a large box underneath.</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <h3>Table Info</h3>
+
+                    <div class="mt-3">
+                        <div class="form-check form-switch">
+                            <label class="form-label" for="table-check" class="form-check-label" role="switch">Rounded
+                                Tables?</label>
+                            <input type="checkbox" name="table-check" id="table-check" class="form-check-input" role="switch">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check form-switch">
+                            <label class="form-label" for="king-hover-check" class="form-check-label" role="switch">King
+                                Image Expand on Hover?</label>
+                            <input type="checkbox" name="king-hover-check" id="king-hover-check" class="form-check-input" role="switch">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="king-img-style" class="form-label">King Image Style:</label>
+                        <select name="king-img-style" id="king-img-style" class="form-select">
+                            <option value="square">Square/Default</option>
+                            <option value="circle">Circle</option>
+                            <option value="rounded">Rounded Square</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="king-img-hover-style" class="form-label">King Image Hover Style:</label>
+                        <select name="king-img-hover-style" id="king-img-hover-style" class="form-select">
+                            <option value="square">Square/Default</option>
+                            <option value="rounded">Rounded Square</option>
+                        </select>
+                        <div class="form-text">Ignore if no expand on hover.</div>
+                    </div>
+
+                    <h3>Additional Images</h3>
+
+                    <div class="mb-3">
+                        <label for="logo-img" class="form-label">Logo Image:</label>
+                        <input type="url" name="logo-img" id="logo-img" class="form-control">
+                        <div class="form-text">Leave blank if planning a hue shift instead. That will have to be manual.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cave-img" class="form-label required">Cave Image:</label>
+                        <input type="url" name="cave-img" id="cave-img" class="form-control">
+                        <div class="form-text">Will also be used as the default for the pride tabs, mounds, and
+                            dynasties.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="pride-img" class="form-label">Pride Tabs Image:</label>
+                        <input type="url" name="pride-img" id="pride-img" class="form-control">
+                        <div class="form-text">Only fill in if you want a separate image for the pride tabs, otherwise
+                            leave blank.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mound-img" class="form-label">Mounds Image:</label>
+                        <input type="url" name="mound-img" id="mound-img" class="form-control">
+                        <div class="form-text">Leave blank to set to default.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="featured-img" class="form-label">Featured Lion Image:</label>
+                        <input type="url" name="featured-img" id="featured-img" class="form-control">
+                        <div class="form-text">LD BGs only. Leave blank if not applicable.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="dynasty-img" class="form-label">Dynasties Image:</label>
+                        <input type="url" name="dynasty-img" id="dynasty-img" class="form-control">
+                        <div class="form-text">Leave blank to set to default.</div>
+                    </div>
+
+                    <h3>Alert Banners</h3>
+
+                    <div class="form-text mb-3">Red applies to pm and forum notifications, green to hunt and patrol
+                        messages,
+                        and
+                        yellow to the messages for increasing territory, beetle slots, etc.</div>
+
+                    <div class="mb-3">
+                        <label for="red-alert-bg" class="form-label required">Red Alert BG Color:</label>
+                        <input type="text" class="form-control" name="red-alert-bg" id="red-alert-bg">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="red-alert-link" class="form-label required">Red Alert Link Color:</label>
+                        <input type="text" class="form-control" name="red-alert-link" id="red-alert-link">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="green-alert-bg" class="form-label required">Green Alert BG Color:</label>
+                        <input type="text" class="form-control" name="green-alert-bg" id="green-alert-bg">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="green-alert-link" class="form-label required">Green Alert Link Color:</label>
+                        <input type="text" class="form-control" name="green-alert-link" id="green-alert-link">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="yellow-alert-bg" class="form-label required">Yellow Alert BG Color:</label>
+                        <input type="text" class="form-control" name="yellow-alert-bg" id="yellow-alert-bg">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="yellow-alert-link" class="form-label required">Yellow Alert Link Color:</label>
+                        <input type="text" class="form-control" name="yellow-alert-link" id="yellow-alert-link">
+                    </div>
+
+                    <h3>Buttons</h3>
+
+                    <div class="form-text mb-3">The gods have abandoned us.</div>
+
+                    <div class="mb-3">
+                        <label for="button1" class="form-label required">Button Color One (Darkest):</label>
+                        <input type="text" class="form-control" name="button1" id="button1">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="button2" class="form-label required">Button Color Two:</label>
+                        <input type="text" class="form-control" name="button2" id="button2">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="button3" class="form-label required">Button Color Three:</label>
+                        <input type="text" class="form-control" name="button3" id="button3">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="button4" class="form-label required">Button Color Four:</label>
+                        <input type="text" class="form-control" name="button4" id="button4">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="button5" class="form-label required">Button Color Five:</label>
+                        <input type="text" class="form-control" name="button5" id="button5">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="button6" class="form-label required">Button Color Six:</label>
+                        <input type="text" class="form-control" name="button6" id="button6">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="button-text" class="form-label">Button Text Color:</label>
+                        <div class="form-check form-switch">
+                            <label class="form-label" for="button-text-check" class="form-check-label" role="switch">Light Text?</label>
+                            <input type="checkbox" name="button-text-check" id="button-text-check" class="form-check-input" role="switch">
+                        </div>
+                        <input type="text" class="form-control" name="button-text" id="button-text">
+                        <div class="form-text">Leave blank to set to primary font color.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="red-button1" class="form-label required">Red Button Color One (Darkest):</label>
+                        <input type="text" class="form-control" name="red-button1" id="red-button1">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="red-button2" class="form-label required">Red Button Color Two:</label>
+                        <input type="text" class="form-control" name="red-button2" id="red-button2">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="red-button3" class="form-label required">Red Button Color Three:</label>
+                        <input type="text" class="form-control" name="red-button3" id="red-button3">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="red-button4" class="form-label required">Red Button Color Four:</label>
+                        <input type="text" class="form-control" name="red-button4" id="red-button4">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="red-button5" class="form-label required">Red Button Color Five:</label>
+                        <input type="text" class="form-control" name="red-button5" id="red-button5">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="red-button6" class="form-label required">Red Button Color Six:</label>
+                        <input type="text" class="form-control" name="red-button6" id="red-button6">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="red-button-text" class="form-label">Red Button Text Color:</label>
+                        <div class="form-check form-switch">
+                            <label class="form-label" for="red-button-text-check" class="form-check-label" role="switch">Light Text?</label>
+                            <input type="checkbox" name="red-button-text-check" id="red-button-text-check" class="form-check-input" role="switch">
+                        </div>
+                        <input type="text" class="form-control" name="red-button-text" id="red-button-text">
+                        <div class="form-text">Leave blank to set to primary font color.</div>
+                    </div>
+                </div>
+                <div class="text-center mt-4"><button class="btn btn-primary" type="submit">Get my Code! ^_^</button>
+                </div>
+            </div>
+        </form>
+        <div id="final-code" class="mt-3"></div>
+    </div>
+    <script src="./js/style.js"></script>
+</body>
+
+</html>
