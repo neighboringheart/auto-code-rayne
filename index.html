@@ -15,7 +15,7 @@
         <form action="" id="code-form">
             <div class="row">
                 <h1 class="mb-1">Chris' Layout Autofiller</h1>
-                <div class="form-text mt-0 mb-3">Version 1.3 (Rayne's Theme)</div>
+                <div class="form-text mt-0 mb-3">Version 2.0 (Rayne's Theme)</div>
                 <p>The perfect application to get the majority of your code filled in quick! It makes it easier than ever to test out different color schemes, fonts, borders, just about anything you could think of, all without any of the headaches! The only things that this form
                     leaves entirely manual are the progress bars and individual images for cave, mounds, what have you.
                     Those are a bit too complicated and situational to include so are best left to the end when making the final tweaks.
@@ -73,7 +73,7 @@
                             <input type="checkbox" name="text-check" id="text-check" class="form-check-input" role="switch">
                         </div>
                         <input class="form-control" type="text" name="font-primary" id="font-primary">
-                        <div class="form-text">No # necessary. Please only enter 6 or 8 digit hexcodes for all color
+                        <div class="form-text">No # necessary. Please only enter 6 digit hexcodes for all color
                             fields.</div>
                     </div>
 
@@ -107,43 +107,14 @@
                     <div class="mb-3">
                         <label class="form-label required" for="primary-one">Primary One (darkest):</label>
                         <input class="form-control" type="text" name="primary-one" id="primary-one">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label required" for="primary-two">Primary Two:</label>
-                        <input class="form-control" type="text" name="primary-two" id="primary-two">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label required" for="primary-three">Primary Three:</label>
-                        <input class="form-control" type="text" name="primary-three" id="primary-three">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label required" for="primary-four">Primary Four:</label>
-                        <input class="form-control" type="text" name="primary-four" id="primary-four">
+                        <div class="form-text">Lightness can be no higher than 85%</div>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label" for="secondary-one">Secondary One (darkest):</label>
                         <input class="form-control" type="text" name="secondary-one" id="secondary-one">
-                        <div class="form-text">Leave secondaries blank if you want them to be the same as the primaries.
+                        <div class="form-text">Leave this blank if you don't want a secondary color. Lightness can be no higher than 85%
                         </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label" for="secondary-two">Secondary Two:</label>
-                        <input class="form-control" type="text" name="secondary-two" id="secondary-two">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label" for="secondary-three">Secondary Three:</label>
-                        <input class="form-control" type="text" name="secondary-three" id="secondary-three">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label" for="secondary-four">Secondary Four:</label>
-                        <input class="form-control" type="text" name="secondary-four" id="secondary-four">
                     </div>
 
                     <div class="mb-3">
@@ -174,21 +145,9 @@
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label" for="border-width">Border Width (px):</label>
-                        <input class="form-control" type="text" name="border-width" id="border-width">
-                        <div class="form-text">Leave blank if not applicable.</div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label" for="border-style">Border Style:</label>
-                        <input class="form-control" type="text" name="border-style" id="border-style">
-                        <div class="form-text">Leave blank if not applicable.</div>
-                    </div>
-
-                    <div class="mb-3">
                         <label class="form-label" for="border-color">Border Color:</label>
                         <input class="form-control" type="text" name="border-color" id="border-color">
-                        <div class="form-text">Leave blank if not applicable.</div>
+                        <div class="form-text">Leave blank if borderless.</div>
                     </div>
 
                     <div class="mb-3">
@@ -346,36 +305,10 @@
 
                     <h3>Buttons</h3>
 
-                    <div class="form-text mb-3">The gods have abandoned us.</div>
-
                     <div class="mb-3">
-                        <label for="button1" class="form-label required">Button Color One (Darkest):</label>
+                        <label for="button1" class="form-label required">Button Color:</label>
                         <input type="text" class="form-control" name="button1" id="button1">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="button2" class="form-label required">Button Color Two:</label>
-                        <input type="text" class="form-control" name="button2" id="button2">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="button3" class="form-label required">Button Color Three:</label>
-                        <input type="text" class="form-control" name="button3" id="button3">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="button4" class="form-label required">Button Color Four:</label>
-                        <input type="text" class="form-control" name="button4" id="button4">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="button5" class="form-label required">Button Color Five:</label>
-                        <input type="text" class="form-control" name="button5" id="button5">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="button6" class="form-label required">Button Color Six:</label>
-                        <input type="text" class="form-control" name="button6" id="button6">
+                        <div class="form-text">Lightness can be no higher than 75%</div>
                     </div>
 
                     <div class="mb-3">
@@ -389,33 +322,9 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="red-button1" class="form-label required">Red Button Color One (Darkest):</label>
+                        <label for="red-button1" class="form-label required">Red Button Color:</label>
                         <input type="text" class="form-control" name="red-button1" id="red-button1">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="red-button2" class="form-label required">Red Button Color Two:</label>
-                        <input type="text" class="form-control" name="red-button2" id="red-button2">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="red-button3" class="form-label required">Red Button Color Three:</label>
-                        <input type="text" class="form-control" name="red-button3" id="red-button3">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="red-button4" class="form-label required">Red Button Color Four:</label>
-                        <input type="text" class="form-control" name="red-button4" id="red-button4">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="red-button5" class="form-label required">Red Button Color Five:</label>
-                        <input type="text" class="form-control" name="red-button5" id="red-button5">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="red-button6" class="form-label required">Red Button Color Six:</label>
-                        <input type="text" class="form-control" name="red-button6" id="red-button6">
+                        <div class="form-text">Lightness can be no higher than 75%</div>
                     </div>
 
                     <div class="mb-3">
