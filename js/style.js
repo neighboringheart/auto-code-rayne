@@ -1345,7 +1345,7 @@ function displayCode(font, fc1, fc2, fc3, tCheck, fontMain, fontMainType, fontHe
     const varText = variables(fc1, fc2, fc3, fontMain, fontMainType, fontHead, fontHeadType, bgColor, pc1, pc2, pc3, pc4, sc1, sc2, sc3, sc4, tc, bc, redBG, redLink, greenBG, greenLink, yellowBG, yellowLink, event, b1, b2, b3, b4, b5, b6, bText, rb1, rb2, rb3, rb4, rb5, rb6, rbText)
     const bodyText = body(bgColor, bgImage) // no box-shadow
     const topbarText = topbar(border, br, shc)
-    const navbarText = navbar(border, bc, br, logo) // no box-shadow
+    const navbarText = navbar(border, br, logo) // no box-shadow
     const mainText = main(border, br, shc)
     const breadcrumbText = breadcrumb(border, br, shc)
     const sidebarText = sidebar(border, br, shc)
@@ -1364,7 +1364,7 @@ function displayCode(font, fc1, fc2, fc3, tCheck, fontMain, fontMainType, fontHe
     const buttonText = buttons(br, bTextShade, rbTextShade) // no box-shadow
     const eventText = eventFlavor() // no box-shadow
     const footerText = footer(tCheck) // no box-shadow
-    const chatText = chat(fc1, fc2, tCheck, pc1, pc2, pc3, pc4, sc1, sc4, border, bc) // no box-shadow (gets cut off)
+    const chatText = chat(tCheck, border) // no box-shadow (gets cut off)
     const mediaText = media(bgColor, mImg, boxType) // no box-shadow
 
     finalCode.innerHTML = `<div class="d-flex justify-content-between align-items-end"><label class="form-label fs-3 fw-medium" for="code-box">Your Code:</label><button onclick="copyButton()" class="btn btn-primary mb-3">Copy Code</button></div><textarea name="copy-field" class="form-control copy-field" id="code-box">/*
