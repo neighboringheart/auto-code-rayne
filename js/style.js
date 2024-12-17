@@ -267,7 +267,7 @@ function progressBar(tCheck) {
     .progress {
     background: ${(tCheck) ? 'var(--pc2)' : '#fff'};
     /* border-radius: 20px; */
-    /* border: 1px solid var(--pc1) */
+    /* border: 1px solid var(--pc1); */
     }
     /* default and impression */
     .progress-bar {
@@ -970,6 +970,11 @@ function eventFlavor() {
     const eventText = `/* has to go at the bottom since it likes to be mean to me otherwise trust me best left here lol */
     center > div.center.b, center > b > span {
     color: var(--eventText) !important;
+    }
+    /* december table fix for dark layouts */
+    .table .table,
+    .table .table b {
+	color: #000 !important;
     }`
 
     return eventText
