@@ -302,11 +302,11 @@ function alertBars(border, br, shc) {
     .alert-danger, .alert-success, .alert-warning, .alert {
     color: var(--fc1);
     background: var(--greenAlert);
-    border: ${(border == 'none') ? border : `1px solid var(--borderColor)`};${(br) ? '&#10;border-radius: 10px;' : ''}${(shc != '') ? `&#10;box-shadow: 1px 1px 3px #${shc};` : ''}
+    border: ${(border == 'none') ? border + ' !important' : `1px solid var(--borderColor) !important`};${(br) ? '&#10;border-radius: 10px;' : ''}${(shc != '') ? `&#10;box-shadow: 1px 1px 3px #${shc};` : ''}
     }
     /* red notifications */
     .alert-danger {
-    color: var(--fc1);
+    color: var(--fc1) !important;
     background: var(--redAlert);
     }
     .alert-danger > a, .alert-danger > a:link, .alert-danger > a:active, .alert-danger > a:visited {
