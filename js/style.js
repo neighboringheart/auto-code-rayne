@@ -227,7 +227,7 @@ function breadcrumb(border, br, shc) {
     background: var(--pc3);
     border: ${(border == 'none') ? border : `1px solid var(--borderColor)`};${(br) ? '&#10;border-radius: 10px;' : ''}${(shc != '') ? `&#10;box-shadow: 1px 1px 3px #${shc};` : ''}}
     .breadcrumb::after {
-    content: "CSS by Chris (#105465)";
+    content: "CSS by thystle (#14796)";
     position: absolute;
     right: 20%;
     z-index: 100;
@@ -1462,3 +1462,4 @@ function copyButton() {
 
     alert(`Copied your code for you! :D`)
 }
+
